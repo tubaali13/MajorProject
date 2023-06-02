@@ -1,0 +1,35 @@
+{% extends 'basic.html' %}
+{%load static%}
+
+  {% block title %} Top 100 Heart Hospitals{% endblock %}}
+  {% block css%}
+  <link href="https://google-developers.appspot.com/maps/documentation/javascript/examples/default.css"
+    rel="stylesheet">
+    <style>
+      .jumbotron{
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0),rgba(0,0,0,0.5)),url('{% static "Files/HospitalBG.png"%}');
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:100vw;
+        border-radius:0;
+      
+      }
+    </style>
+  {% endblock %}
+  
+  {% block body %}
+ <body class="">
+  <div class="jumbotron" >
+    <h1 class="display-6">BEST Heart HOSPITALS <small>across the world!</small></h1>
+  </div>
+    <div id="map_canvas"><iframe style="height:75vh; width:100vw; border:1px solid black;" src="https://www.google.com/maps/d/embed?mid=1twS3Wn2eh1R3q9CMhPqiF8ixOq0&hl=en_US&ehbc=2E312F" width="640" height="480"></iframe></div>
+    <table>
+      <thead>
+      </thead>
+      <tbody>
+      </tbody>
+      </table>
+    </table>
+    
+{% endblock %}
